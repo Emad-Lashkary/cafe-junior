@@ -1,5 +1,4 @@
-const menuData = [
-  // Hot Coffees
+export const menuData = [
   {
     id: 1,
     name: "Espresso",
@@ -259,5 +258,3 @@ const menuData = [
     category: "Coffee Accompaniments",
   },
 ];
-
-export default coffeeMenuItems;

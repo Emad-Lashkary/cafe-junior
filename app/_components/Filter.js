@@ -1,15 +1,15 @@
-export default function Filter({
-  categories,
-  selectedCategory,
-  onSelectCategory,
-}) {
+// _components/Filter.js
+"use client"; // Client component for interactive behavior
+
+const Filter = ({ categories, selectedCategory, onSelectCategory }) => {
   return (
     <div className="flex items-center gap-4">
-      <label className="font-medium text-primary-800">
+      <label htmlFor="category" className="text-sm font-medium text-gray-700">
         Filter by Category:
       </label>
       <select
-        className="border border-primary-300 rounded-lg p-2 shadow-md focus:outline-none focus:ring-2 focus:ring-primary-500 transition"
+        id="category"
+        className="border border-gray-300 rounded-lg p-3 shadow-md focus:outline-none focus:ring-2 focus:ring-primary-500 transition"
         value={selectedCategory}
         onChange={(e) => onSelectCategory(e.target.value)}
       >
@@ -21,4 +21,6 @@ export default function Filter({
       </select>
     </div>
   );
-}
+};
+
+export default Filter;
