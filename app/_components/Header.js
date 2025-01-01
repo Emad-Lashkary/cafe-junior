@@ -42,10 +42,10 @@ function Header() {
       <img
         alt="logo"
         src="logo.png"
-        className={`absolute w-10 h-10 scale-[5] bottom-0 left-[50%] -translate-x-[50%] translate-y-[40%] scale-x-[6.5] transition-all duration-1000 ${
+        className={`absolute w-10 h-10 bottom-0 left-[50%] -translate-x-[50%] transition-all duration-1000 ease-in-out ${
           showLogo
-            ? "translate-y-[50%] fadeIn"
-            : "-translate-y-[100%] scale-[400%] scale-x-[500%] -bottom-[10px] opacity-75 fadeOut"
+            ? "translate-y-[40%] scale-[5] scale-x-[6.5] opacity-100"
+            : "-translate-y-[100%] scale-[400%] scale-x-[500%] opacity-75"
         }`}
       />
 
